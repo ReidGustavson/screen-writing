@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import logo from './logo.svg'
+import './App.css'
 
-function App() {
+function App () {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,7 +21,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
