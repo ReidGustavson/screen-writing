@@ -8,6 +8,17 @@ module.exports = {
     'standard-with-typescript'
   ],
   overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking'
+      ],
+
+      parserOptions: {
+        project: ['./tsconfig.json']
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -17,5 +28,7 @@ module.exports = {
     'react'
   ],
   rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }]
   }
 }
