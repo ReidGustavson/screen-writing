@@ -36,12 +36,54 @@
         "GraphQLAPIEndpointOutput": "https://qcrrm6vs3rhorijfvib2i27doy.appsync-api.us-west-2.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-qjtkl4bznrebndaj24pd2et4n4"
       },
-      "lastPushTimeStamp": "2022-09-06T21:32:21.403Z",
+      "lastPushTimeStamp": "2022-09-06T21:56:23.825Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-screenplay-staging-165253-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiScreenplay"
+      }
+    }
+  },
+  "auth": {
+    "screenplay9bcadea4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       },
-      "lastPushDirHash": "0LMUkFPC+OD6spZ96MFfUo1avUU="
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-screenplay-staging-165253-deployment/amplify-cfn-templates/auth/screenplay9bcadea4-cloudformation-template.json",
+        "logicalId": "authscreenplay9bcadea4"
+      },
+      "lastPushTimeStamp": "2022-09-06T21:56:24.070Z",
+      "output": {
+        "UserPoolId": "us-west-2_73DHojN40",
+        "AppClientIDWeb": "1srkdqpfs51i9c34o76phpm81q",
+        "AppClientID": "fvp83p50qhdusvtponj8nb091",
+        "IdentityPoolId": "us-west-2:add644ba-7bb5-4731-af09-74a4eee3cc6a",
+        "UserPoolArn": "arn:aws:cognito-idp:us-west-2:824306857104:userpool/us-west-2_73DHojN40",
+        "IdentityPoolName": "screenplay9bcadea4_identitypool_9bcadea4__staging",
+        "UserPoolName": "screenplay9bcadea4_userpool_9bcadea4"
+      },
+      "lastPushDirHash": "s73bf6+nV3zl8k6htAb0xXjOf58="
     }
   }
 }

@@ -2,6 +2,12 @@
     "AppSyncApiName": "Screenplay",
     "DynamoDBBillingMode": "PAY_PER_REQUEST",
     "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
     "S3DeploymentBucket": "amplify-screenplay-staging-165253-deployment",
     "S3DeploymentRootKey": "amplify-appsync-files/6017147f8366d51c48ebbef0328d6307083859bf"
 }
