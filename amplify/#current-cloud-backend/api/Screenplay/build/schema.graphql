@@ -214,14 +214,6 @@ type Mutation {
   deleteAuthors(input: DeleteAuthorsInput!, condition: ModelAuthorsConditionInput): Authors @aws_api_key @aws_iam
 }
 
-input ModelSubscriptionAuthorsFilterInput {
-  id: ModelSubscriptionIDInput
-  first_name: ModelSubscriptionStringInput
-  last_name: ModelSubscriptionStringInput
-  and: [ModelSubscriptionAuthorsFilterInput]
-  or: [ModelSubscriptionAuthorsFilterInput]
-}
-
 type Subscription {
   onCreateAuthors: Authors @aws_subscribe(mutations: ["createAuthors"]) @aws_api_key @aws_iam
   onUpdateAuthors: Authors @aws_subscribe(mutations: ["updateAuthors"]) @aws_api_key @aws_iam
