@@ -36,10 +36,38 @@
         "GraphQLAPIEndpointOutput": "https://qcrrm6vs3rhorijfvib2i27doy.appsync-api.us-west-2.amazonaws.com/graphql",
         "GraphQLAPIKeyOutput": "da2-qjtkl4bznrebndaj24pd2et4n4"
       },
-      "lastPushTimeStamp": "2022-09-06T21:27:48.864Z",
+      "lastPushTimeStamp": "2022-09-06T21:52:58.992Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-screenplay-staging-165253-deployment/amplify-cfn-templates/api/cloudformation-template.json",
         "logicalId": "apiScreenplay"
+      }
+    }
+  },
+  "auth": {
+    "screenplay9bcadea4": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
       }
     }
   }
