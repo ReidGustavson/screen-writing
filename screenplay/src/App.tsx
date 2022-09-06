@@ -19,6 +19,10 @@ function App () {
         >
           Learn React
         </a>
+        <form action="../../" method="get"
+              className="form">
+          <button type="submit">Connected</button>
+        </form>
       </header>
     </div>
   )
